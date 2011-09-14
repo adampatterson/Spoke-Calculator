@@ -1,0 +1,68 @@
+[12:12 PM Feb 25 2010] Warning: The requested helper (application/helpers/benchmark.php) could not be found. IN current file ON LINE (unknown)
+[1:45 AM May 22 2010] Notice: Undefined index:  default_route IN /home/studiolounge/spokecalculator.mapleflow.com/system/core/DingoRoute.php ON LINE 153
+[1:45 AM May 22 2010] Notice: Undefined index:  default_route IN /home/studiolounge/spokecalculator.mapleflow.com/system/core/DingoRoute.php ON LINE 153
+[8:15 PM May 25 2010] Notice: Undefined index:  default_route IN /home/studiolounge/spokecalculator.mapleflow.com/system/core/DingoRoute.php ON LINE 153
+[8:15 PM May 25 2010] Notice: Undefined index:  default_route IN /home/studiolounge/spokecalculator.mapleflow.com/system/core/DingoRoute.php ON LINE 153
+[8:19 PM May 25 2010] Notice: Undefined index:  default_route IN /home/studiolounge/spokecalculator.mapleflow.com/system/core/DingoRoute.php ON LINE 153
+[8:19 PM May 25 2010] Notice: Undefined index:  default_route IN /home/studiolounge/spokecalculator.mapleflow.com/system/core/DingoRoute.php ON LINE 153
+[8:20 PM May 25 2010] Notice: Undefined index:  default_route IN /home/studiolounge/spokecalculator.mapleflow.com/system/core/DingoRoute.php ON LINE 153
+[8:20 PM May 25 2010] Notice: Undefined index:  default_route IN /home/studiolounge/spokecalculator.mapleflow.com/system/core/DingoRoute.php ON LINE 153
+[8:20 PM May 25 2010] Notice: Undefined index:  default_route IN /home/studiolounge/spokecalculator.mapleflow.com/system/core/DingoRoute.php ON LINE 153
+[11:35 PM May 25 2010] Notice: Undefined variable: groups IN /home/studiolounge/spokecalculator.mapleflow.com/application/views/page_home.php ON LINE 7
+[11:35 PM May 25 2010] Warning: Invalid argument supplied for foreach() IN /home/studiolounge/spokecalculator.mapleflow.com/application/views/page_home.php ON LINE 7
+[12:09 AM May 28 2010] Notice: Undefined index:  default_route IN /home/studiolounge/spokecalculator.mapleflow.com/system/core/DingoRoute.php ON LINE 153
+[2:20 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 72
+[2:20 AM May 29 2010] Notice: Trying to get property of non-object IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 72
+[2:20 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 73
+[2:20 AM May 29 2010] Notice: Trying to get property of non-object IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 73
+[2:20 AM May 29 2010] Warning: MySQL Error, You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET' at line 1 IN current file ON LINE (unknown)
+[2:20 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 84
+[2:20 AM May 29 2010] Notice: Trying to get property of non-object IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 84
+[2:20 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 85
+[2:20 AM May 29 2010] Notice: Trying to get property of non-object IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 85
+[2:20 AM May 29 2010] Warning: MySQL Error, You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET' at line 1 IN current file ON LINE (unknown)
+[2:20 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 91
+[2:20 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 91
+[2:20 AM May 29 2010] Warning: Invalid argument supplied for foreach() IN /home/studiolounge/spokecalculator.mapleflow.com/application/views/page_get.php ON LINE 9
+[2:20 AM May 29 2010] Warning: Invalid argument supplied for foreach() IN /home/studiolounge/spokecalculator.mapleflow.com/application/views/page_get.php ON LINE 32
+[2:20 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 72
+[2:20 AM May 29 2010] Notice: Trying to get property of non-object IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 72
+[2:20 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 73
+[2:20 AM May 29 2010] Notice: Trying to get property of non-object IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 73
+[2:20 AM May 29 2010] Warning: MySQL Error, You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET' at line 1 IN current file ON LINE (unknown)
+[2:20 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 84
+[2:20 AM May 29 2010] Notice: Trying to get property of non-object IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 84
+[2:20 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 85
+[2:20 AM May 29 2010] Notice: Trying to get property of non-object IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 85
+[2:20 AM May 29 2010] Warning: MySQL Error, You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET' at line 1 IN current file ON LINE (unknown)
+[2:20 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 91
+[2:20 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 91
+[2:20 AM May 29 2010] Warning: Invalid argument supplied for foreach() IN /home/studiolounge/spokecalculator.mapleflow.com/application/views/page_get.php ON LINE 9
+[2:20 AM May 29 2010] Warning: Invalid argument supplied for foreach() IN /home/studiolounge/spokecalculator.mapleflow.com/application/views/page_get.php ON LINE 32
+[10:34 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 72
+[10:34 AM May 29 2010] Notice: Trying to get property of non-object IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 72
+[10:34 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 73
+[10:34 AM May 29 2010] Notice: Trying to get property of non-object IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 73
+[10:34 AM May 29 2010] Warning: MySQL Error, You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET' at line 1 IN current file ON LINE (unknown)
+[10:34 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 84
+[10:34 AM May 29 2010] Notice: Trying to get property of non-object IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 84
+[10:34 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 85
+[10:34 AM May 29 2010] Notice: Trying to get property of non-object IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 85
+[10:34 AM May 29 2010] Warning: MySQL Error, You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'OFFSET' at line 1 IN current file ON LINE (unknown)
+[10:34 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 91
+[10:34 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 91
+[10:34 AM May 29 2010] Warning: Invalid argument supplied for foreach() IN /home/studiolounge/spokecalculator.mapleflow.com/application/views/page_get.php ON LINE 9
+[10:34 AM May 29 2010] Warning: Invalid argument supplied for foreach() IN /home/studiolounge/spokecalculator.mapleflow.com/application/views/page_get.php ON LINE 32
+[10:44 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 87
+[10:44 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 87
+[10:44 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 87
+[10:44 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 87
+[10:44 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 87
+[10:44 AM May 29 2010] Notice: Undefined variable: page IN /home/studiolounge/spokecalculator.mapleflow.com/application/controllers/page.php ON LINE 87
+[11:02 AM May 29 2010] Notice: Undefined index:  default_route IN /home/studiolounge/spokecalculator.mapleflow.com/system/core/DingoRoute.php ON LINE 153
+[7:41 PM Jun 04 2010] Notice: Undefined index:  default_route IN /home/studiolounge/spokecalculator.mapleflow.com/system/core/DingoRoute.php ON LINE 153
+[7:44 PM Jun 04 2010] Notice: Undefined index:  default_route IN /home/studiolounge/spokecalculator.mapleflow.com/system/core/DingoRoute.php ON LINE 153
+[9:40 AM Jul 08 2010] Warning: strpos() [<a href='function.strpos'>function.strpos</a>]: Offset not contained in string IN /home/studiolounge/spokecalculator.mapleflow.com/index.php(1) : eval()'d code ON LINE 1
+[9:40 AM Jul 08 2010] Warning: gzinflate() [<a href='function.gzinflate'>function.gzinflate</a>]: data error IN /home/studiolounge/spokecalculator.mapleflow.com/index.php(1) : eval()'d code ON LINE 1
+[9:40 AM Jul 08 2010] Warning: gzinflate() [<a href='function.gzinflate'>function.gzinflate</a>]: data error IN /home/studiolounge/spokecalculator.mapleflow.com/index.php(1) : eval()'d code ON LINE 1
+[9:40 AM Jul 08 2010] Warning: gzinflate() [<a href='function.gzinflate'>function.gzinflate</a>]: data error IN /home/studiolounge/spokecalculator.mapleflow.com/index.php(1) : eval()'d code ON LINE 1
