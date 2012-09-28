@@ -1,5 +1,5 @@
 <?php 
-class controller {
+class edit_controller {
 	public function hub($hubid="") {
 		
 	}

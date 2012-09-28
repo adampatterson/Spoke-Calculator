@@ -9,17 +9,14 @@
  */
 
 
-// Application's Base URL
-define('BASE_URL','http://localhost/dingo/dev/');
-
 // Does Application Use Mod_Rewrite URLs?
-define('MOD_REWRITE',FALSE);
+define('MOD_REWRITE',TRUE);
 
 // Turn Debugging On?
 define('DEBUG',TRUE);
 
 // Turn Error Logging On?
-define('ERROR_LOGGING',FALSE);
+define('ERROR_LOGGING',TRUE);
 
 // Error Log File Location
 define('ERROR_LOG_FILE','log.txt');
@@ -34,10 +31,10 @@ date_default_timezone_set('America/New_York');
 
 
 /* Auto Load Libraries */
-config::set('autoload_library',array('url','db'));
+config::set('autoload_library',array('url','db','note','session','user'));
 
 /* Auto Load Helpers */
-config::set('autoload_helper',array());
+config::set('autoload_helper',array('calculator','user','inflector', 'date'));
 
 
 /* Sessions */

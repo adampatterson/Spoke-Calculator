@@ -63,5 +63,10 @@ class controller {
 		}
 
 	} // END Function SQL Hub
+
+	public function json()
+	{
+		
 	}
-?>
+
+}

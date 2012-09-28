@@ -1,5 +1,5 @@
 <?php
-class controller {
+class calculate_controller {
 	
 	public function process() {
 
@@ -100,30 +100,30 @@ class controller {
 		$bmx="20";
 		
 		
-		$cfl = 			$this->input->post('cfl');
-		$cfr = 			$this->input->post('cfr');
-		$fdl = 			$this->input->post('fdl');
-		$fdr = 			$this->input->post('fdr');
-		$erd = 			$this->input->post('erd');
+		$cfl = 		input::post('cfl');
+		$cfr = 		input::post('cfr');
+		$fdl = 		input::post('fdl');
+		$fdr = 		input::post('fdr');
+		$erd = 		input::post('erd');
 		
-		$hname = 		$this->input->post('hname');
-		$hmodel = 		$this->input->post('hmodel');
-		$spokes = 		$this->input->post('spokes');
-		$hspace = 		$this->input->post('hspace');
-		$frontrear = 	$this->input->post('frontrear');
+		$hname = 		input::post('hname');
+		$hmodel = 		input::post('hmodel');
+		$spokes = 		input::post('spokes');
+		$hspace = 		input::post('hspace');
+		$frontrear = 	input::post('frontrear');
 
-		$rname = 		$this->input->post('rname');
-		$rmodel = 		$this->input->post('rmodel');
-		$spokes = 		$this->input->post('spokes');
-		$rsize = 		$this->input->post('rsize');
+		$rname = 		input::post('rname');
+		$rmodel = 		input::post('rmodel');
+		$spokes = 		input::post('spokes');
+		$rsize = 		input::post('rsize');
 		
-		$cross = 		$this->input->post('cross');
+		$cross = 		input::post('cross');
 		
 		if ($rsize >= $bmx){ 
-				$correction="3.2"; //BMX wheels
-				} else {
-				$correction="1.4"; //Anything else
-				}
+			$correction="3.2"; //BMX wheels
+		} else {
+			$correction="1.4"; //Anything else
+		}
 
 		// Powers
 		$cflpower= pow($cfl, $power);
@@ -148,17 +148,8 @@ class controller {
 		$leftlength= sqrt($leftside)/2+$correction;
 		$rightlength= sqrt($rightside)/2+$correction;
 		
-		/**
-		echo "<pre>";
-		print_r(get_defined_vars());
-		echo "</pre>";
-		**/
-		
-		$this->load->view('page_calculation', array('data'=>get_defined_vars()));
-
-
+		load::view('page_calculation', array('data'=>get_defined_vars()));
 	}
-	
 }
 
 ?>

@@ -66,3 +66,20 @@
 [9:40 AM Jul 08 2010] Warning: gzinflate() [<a href='function.gzinflate'>function.gzinflate</a>]: data error IN /home/studiolounge/spokecalculator.mapleflow.com/index.php(1) : eval()'d code ON LINE 1
 [9:40 AM Jul 08 2010] Warning: gzinflate() [<a href='function.gzinflate'>function.gzinflate</a>]: data error IN /home/studiolounge/spokecalculator.mapleflow.com/index.php(1) : eval()'d code ON LINE 1
 [9:40 AM Jul 08 2010] Warning: gzinflate() [<a href='function.gzinflate'>function.gzinflate</a>]: data error IN /home/studiolounge/spokecalculator.mapleflow.com/index.php(1) : eval()'d code ON LINE 1
+[5:44 PM Sep 27 2012] Notice: Use of undefined constant TITLE - assumed 'TITLE' IN /Users/adampatterson/Sites/spoke-calculator/application/view/partials/header.php ON LINE 5
+[5:44 PM Sep 27 2012] Notice: Use of undefined constant CSS - assumed 'CSS' IN /Users/adampatterson/Sites/spoke-calculator/application/view/partials/header.php ON LINE 11
+[5:44 PM Sep 27 2012] Notice: Use of undefined constant CSS - assumed 'CSS' IN /Users/adampatterson/Sites/spoke-calculator/application/view/partials/header.php ON LINE 12
+[5:44 PM Sep 27 2012] Notice: Use of undefined constant CSS - assumed 'CSS' IN /Users/adampatterson/Sites/spoke-calculator/application/view/partials/header.php ON LINE 14
+[5:44 PM Sep 27 2012] Notice: Use of undefined constant TITLE - assumed 'TITLE' IN /Users/adampatterson/Sites/spoke-calculator/application/view/partials/header.php ON LINE 35
+[3:52 PM Sep 27 2012] Warning: Invalid argument supplied for foreach() IN /Users/adampatterson/Sites/spoke-calculator/application/view/page/home.php ON LINE 7
+[3:52 PM Sep 27 2012] Warning: Invalid argument supplied for foreach() IN /Users/adampatterson/Sites/spoke-calculator/application/view/page/home.php ON LINE 54
+[4:02 PM Sep 27 2012] Warning: Invalid argument supplied for foreach() IN /Users/adampatterson/Sites/spoke-calculator/application/view/page/home.php ON LINE 7
+[4:02 PM Sep 27 2012] Warning: Invalid argument supplied for foreach() IN /Users/adampatterson/Sites/spoke-calculator/application/view/page/home.php ON LINE 54
+[4:02 PM Sep 27 2012] Warning: Invalid argument supplied for foreach() IN /Users/adampatterson/Sites/spoke-calculator/application/view/page/home.php ON LINE 7
+[4:02 PM Sep 27 2012] Warning: Invalid argument supplied for foreach() IN /Users/adampatterson/Sites/spoke-calculator/application/view/page/home.php ON LINE 54
+[8:20 PM Sep 27 2012] Warning: Invalid argument supplied for foreach() IN /Users/adampatterson/Sites/spoke-calculator/application/view/page/home.php ON LINE 7
+[8:20 PM Sep 27 2012] Warning: Invalid argument supplied for foreach() IN /Users/adampatterson/Sites/spoke-calculator/application/view/page/home.php ON LINE 54
+[8:21 PM Sep 27 2012] Warning: Invalid argument supplied for foreach() IN /Users/adampatterson/Sites/spoke-calculator/application/view/page/home.php ON LINE 7
+[8:21 PM Sep 27 2012] Warning: Invalid argument supplied for foreach() IN /Users/adampatterson/Sites/spoke-calculator/application/view/page/home.php ON LINE 54
+[8:21 PM Sep 27 2012] Warning: Invalid argument supplied for foreach() IN /Users/adampatterson/Sites/spoke-calculator/application/view/page/home.php ON LINE 7
+[8:21 PM Sep 27 2012] Warning: Invalid argument supplied for foreach() IN /Users/adampatterson/Sites/spoke-calculator/application/view/page/home.php ON LINE 54

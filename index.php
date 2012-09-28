@@ -2,6 +2,8 @@
 
 error_reporting(E_STRICT|E_ALL);
 
+require_once('system-variables.php');
+
 // Application configuration
 //----------------------------------------------------------------------------------------------
 
@@ -25,5 +27,5 @@ define('ALLOWED_CHARS','/^[ \!\,\~\&\.\:\+\@\-_a-zA-Z0-9]+$/');
 // End of configuration
 //----------------------------------------------------------------------------------------------
 define('DINGO',1);
-require_once(SYSTEM.'/core/bootstrap.php');
+require_once(SYSTEM.'/dingo.php');
 bootstrap::run();

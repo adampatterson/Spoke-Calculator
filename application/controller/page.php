@@ -2,18 +2,17 @@
 class page_controller {
 
     public function home() {
-    	
-		$groups_table = $this->db->table('groups');				
-		$groups = $groups_table->select('*')
-						->order_by('groups','ASC')
-						->execute();
+		$group = load::model ( 'group' );
 		
-        $this->load->view('page_home', array( 'groups'=>$groups));
+		$group = $group->get();
+		
+        load::view('page/home', array( 'groups'=>$group));
     }
     
     public function hubs($current_page=1) {
 		// Select Database Table
-		$hubs_table = $this->db->table('hubinfo');
+		$hubs_table = db('hubinfo');
+		
 		$total = $hubs_table->count()->execute();
 		$page = new pagination($total, $current_page,25);
 		
@@ -24,20 +23,20 @@ class page_controller {
 							->offset($page->min)
 							->execute();
 							
-		$groups_table = $this->db->table('groups');				
+		$groups_table = db('groups');				
 		$groups = $groups_table->select('*')
 						->order_by('groups','ASC')
 						->execute();
 							
 		//print_r(get_defined_vars());
-		$hubs_table = $this->load->model('groups');
+		$hubs_table = load::model('groups');
 		
-        $this->load->view('page_hubs', array( 'hubs'=>$hubs,'page'=>$page, 'groups'=>$groups));
+        load::view('page_hubs', array( 'hubs'=>$hubs,'page'=>$page, 'groups'=>$groups));
     }
 	
     public function rims($current_page=1) {
     	// Select Database Table
-		$rims_table = $this->db->table('riminfo');
+		$rims_table = db('riminfo');
 		$total = $rims_table->count()->execute();
 		$page = new pagination($total, $current_page,25);
 		
@@ -48,7 +47,7 @@ class page_controller {
 							->offset($page->min)
 							->execute();
 		
-		$groups_table = $this->db->table('groups');				
+		$groups_table = db('groups');				
 		$groups = $groups_table->select('*')
 						->order_by('groups','ASC')
 						->execute();
@@ -63,15 +62,15 @@ class page_controller {
 	public function get() {
 	    	
 		// Select Database Table
-		$hubs_table = $this->db->table('hubinfo');
-		$rims_table = $this->db->table('riminfo');
+		$hubs_table = db('hubinfo');
+		$rims_table = db('riminfo');
 		
 		$hubs = $hubs_table->select('*')
 							->order_by('hname','DESC')
 							->order_by('hmodel','ASC')
 							->execute();
 							
-		$groups_table = $this->db->table('groups');				
+		$groups_table = db('groups');				
 		$groups = $groups_table->select('*')
 						->order_by('groups','ASC')
 						->execute();

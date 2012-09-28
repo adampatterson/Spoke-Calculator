@@ -1,0 +1,10 @@
+[5:44 PM Sep 27 2012] Notice: Use of undefined constant SYSTEM - assumed 'SYSTEM' IN /Users/adampatterson/Sites/spoke-calculator/system/dingo.php ON LINE 72
+[5:44 PM Sep 27 2012] Notice: Use of undefined constant APPLICATION - assumed 'APPLICATION' IN /Users/adampatterson/Sites/spoke-calculator/system/dingo.php ON LINE 73
+[5:44 PM Sep 27 2012] Notice: Use of undefined constant CONFIG - assumed 'CONFIG' IN /Users/adampatterson/Sites/spoke-calculator/system/dingo.php ON LINE 74
+[5:44 PM Sep 27 2012] Notice: Use of undefined constant APPLICATION - assumed 'APPLICATION' IN /Users/adampatterson/Sites/spoke-calculator/system/dingo.php ON LINE 78
+[5:44 PM Sep 27 2012] Notice: Use of undefined constant CONFIG - assumed 'CONFIG' IN /Users/adampatterson/Sites/spoke-calculator/system/dingo.php ON LINE 78
+[5:44 PM Sep 27 2012] Notice: Use of undefined constant ALLOWED_CHARS - assumed 'ALLOWED_CHARS' IN /Users/adampatterson/Sites/spoke-calculator/system/dingo.php ON LINE 341
+[5:44 PM Sep 27 2012] Warning: preg_match(): Delimiter must not be alphanumeric or backslash IN /Users/adampatterson/Sites/spoke-calculator/system/dingo.php ON LINE 341
+[5:44 PM Sep 27 2012] Notice: Use of undefined constant MOD_REWRITE - assumed 'MOD_REWRITE' IN /Users/adampatterson/Sites/spoke-calculator/system/library/url.php ON LINE 35
+[5:45 PM Sep 27 2012] Notice: Use of undefined constant MOD_REWRITE - assumed 'MOD_REWRITE' IN /Users/adampatterson/Sites/spoke-calculator/system/library/url.php ON LINE 35
+[5:45 PM Sep 27 2012] Notice: Use of undefined constant MOD_REWRITE - assumed 'MOD_REWRITE' IN /Users/adampatterson/Sites/spoke-calculator/system/library/url.php ON LINE 35

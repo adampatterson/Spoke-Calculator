@@ -13,12 +13,11 @@ config::set('db',array(
 	/* Default Connection */
 	'default'=>array(
 	
-		'driver'=>'mysql',       // Driver
-		'host'=>'localhost',     // Host
-		'username'=>'root',      // Username
-		'password'=>'root',          // Password
-		'database'=>'personal_dev_spoke'       // Database
-	
+		'driver'=>'mysql',       					// Driver
+		'host'=>'localhost',     					// Host
+		'username'=>'root',      					// Username
+		'password'=>'root',          				// Password
+		'database'=>'personal_dev_spoke'       	// Database
 	)
 	
 ));
