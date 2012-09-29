@@ -1,117 +1,104 @@
 <? load::view('partials/header', array( 'title'=>'Calculate' )); ?>
-<div class="column span-21 last content-section">
-    <form method="post" action="<?php echo url::page('index.php/calculate/process'); ?>" id="spokecalculator">
-        <div class="span-10">
-            <h2>Rim Measurements</h2>
-			<select>
-			<? foreach ($groups as $group): ?>
-			<option value="<?=$group['gid'];?>"><?=$group['groups'];?></option>
-	 		<? endforeach; ?>
-			</select>
+
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function(){
+		$('#hub_search').keyup(get_hubs);
+	});
+
+	function get_hubs() {	
+		var hub_search = $('#hub_search').val();
+		
+		if(hub_search.length > 3)
+		{
+			var url_base = '<?= BASE_URL ?>api/hub/';
+			var url_param = encodeURIComponent( hub_search );
 			
-            <dl>
-                <dt>
-                    Name
-                </dt>
-                <dd>
-                    <input type="text" name="rname" id="rname" tabindex="1" />
-                </dd>
-                <dt>
-                    Model
-                </dt>
-                <dd>
-                    <input type="text" name="rmodel" id="rmodel" value="" tabindex="2" />
-                </dd>
-                <dt>
-                    ERD <span class="red">*</span>
-                </dt>
-                <dd>
-                    <input type="text" name="erd" id="erd" value="" tabindex="3" />
-                </dd>
-                <dt>
-                    Rim Size
-                </dt>
-                <dd>
-                    <input type="text" name="rsize" id="rsize" value="" tabindex="3" />
-                </dd>
-                <dt>
-                    Spoke Holes <span class="red">*</span>
-                </dt>
-                <dd>
-                    <input type="text" name="spokes" id="spokes" value='32' tabindex="4" />
-                </dd>
-                <dt>
-                    Spoke Cross <span class="red">*</span>
-                </dt>
-                <dd>
-                    <input type="text" name="cross" id="cross" value='3' tabindex="5" />
-                </dd>
-            </dl>
-        </div>
-        <div class="span-10 prepend-1 last">
-            <h2>Hub Measurements</h2>
-			<select>
-			<? foreach ($groups as $group): ?>
-			<option value="<?=$group['gid'];?>"><?=$group['groups'];?></option>
-	 		<? endforeach; ?>
-			</select>
+			var url = url_base+url_param;
 			
-            <dl>
-                <dt>
-                    Name
-                </dt>
-                <dd>
-                    <input type="text" name="hname" id="hname" value="" tabindex="7" />
-                </dd>
-                <dt>
-                    Model
-                </dt>
-                <dd>
-                    <input type="text" name="hmodel" id="hmodel" value="" tabindex="8" />
-                </dd>
-                <dt>
-                    Front or Rear
-                </dt>
-                <dd>
-                    <input type="radio" name="frontrear" tabindex="9" value="front">Front
-                    <br>
-                    <input type="radio" name="frontrear" tabindex="10" value="rear">Rear
-                </dd>
-                <dt>
-                    Axel Spacing
-                </dt>
-                <dd>
-                    <input type="text" name="hspace" id="hspace" value="" tabindex="11" />
-                </dd>
-                <dt>
-                    Left FD <span class="red">*</span>
-                </dt>
-                <dd>
-                    <input type="text" name="fdl" id="fdl" value="" tabindex="12" />
-                </dd>
-                <dt>
-                    Right FD <span class="red">*</span>
-                </dt>
-                <dd>
-                    <input type="text" name="fdr" id="fdr" value="" tabindex="13" />
-                </dd>
-                <dt>
-                    Left CF <span class="red">*</span>
-                </dt>
-                <dd>
-                    <input type="text" name="cfl" id="cfl" value='' tabindex="14" />
-                </dd>
-                <dt>
-                    Right CF <span class="red">*</span>
-                </dt>
-                <dd>
-                    <input type="text" name="cfr" id="cfr" value='' tabindex="15" />
-                </dd>
-            </dl>
-        </div>
-        <div class="barsubmit">
-            <input type="submit" name="Calculate" value="Calculate" class="button" tabindex="16" />
-        </div>
-    </form>
+			console.log(url);
+			
+			jQuery.ajax({
+				url: url,
+				cache: false,
+				success: function(response){
+					if(response != '')
+					{
+						console.log(response);
+					}
+				}
+			});
+			
+		}
+	}
+</script>
+
+<div class="row content-section">
+	<form method="post" action="<?= url::page('index.php/calculate/process'); ?>" id="spokecalculator">
+		<div class="span12">
+			<p class="lead">The
+				<button class="btn" type="button">Front</button><button class="btn" type="button">Rear</button>wheel has
+				<input type="text" class="" placeholder="32" name="spokes" required> spokes,
+				<input type="text" class="" placeholder="3" name="cross" required> cross and is
+				<input type="text" class="" placeholder="26" name="rsize" required> big.</p>
+		</div>
+		<div class="span12">
+			<h3>Existing</h3>
+			<div class="row">
+				<div class="span1"><strong>Rim</strong>:</div>
+				<div class="span4">
+					<input class="span3" id="rim_search"type="text" placeholder="">
+					<div class="rim_results"></div>
+				</div>
+				<div class="span1"><strong>Hub</strong>:</div>
+				<div class="span4">
+					<input class="span3" id="hub_search" type="text" placeholder="">
+					<div class="hub_results"></div>
+				</div>
+			</div>
+		</div>
+		<div class="span12">
+			<div class="form-actions">
+				<button name="values" class="btn btn-primary">Load Values</button>
+			</div>
+		</div>
+		<div class="span12">
+			<h3>Measurements</h3>
+			<table cellpadding="0" cellspacing="0">
+				<tbody>
+					<tr>
+						<td></td>
+						<td align="center"><div class="sc_label">left</div></td>
+						<td></td>
+						<td align="center"><div class="sc_label">right</div></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Effective rim diameter <strong>(ERD)</strong>:&nbsp;</td>
+						<td><input name="erd" value="" type="text" class="span1"></td>
+						<td colspan="3">&nbsp;mm</td>
+					</tr>
+					<tr>
+						<td>Flange diamiter <strong>(FD)</strong>:&nbsp;</td>
+						<td><input name="fdl" value="" type="text" class="span1"></td>
+						<td>&nbsp;mm&nbsp;&nbsp;</td>
+						<td><input name="fdr" value="" type="text" class="span1"></td>
+						<td>&nbsp;mm</td>
+					</tr>
+					<tr>
+						<td>Center to Flange <strong>(CF)</strong>:&nbsp;</td>
+						<td><input name="cfl" value="" type="text" class="span1"></td>
+						<td>&nbsp;mm&nbsp;&nbsp;</td>
+						<td><input name="cfr" value="" type="text" class="span1"></td>
+						<td>&nbsp;mm</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="span12">
+			<div class="form-actions">
+				<input type="submit" name="Calculate" value="Calculate" class="btn btn-primary" tabindex="16" />
+			</div>
+		</div>
+	</form>
 </div>
 <? load::view('partials/footer'); ?>

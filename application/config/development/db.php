@@ -19,5 +19,4 @@ config::set('db',array(
 		'password'=>'root',          				// Password
 		'database'=>'personal_dev_spoke'       	// Database
 	)
-	
 ));

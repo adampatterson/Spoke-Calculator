@@ -1,6 +1,7 @@
 <?php if(!defined('DINGO')){die('External Access to File Denied');}
 
-// Actoins
+
+
 	route::set('action',array(
 	    'controller'=>'action',
 	    'function'=>'index'
@@ -23,17 +24,32 @@
 		'arguments'=>array('$2','$3')
 	));
 	
+		route::set('api',array(
+	    'controller'=>'api',
+	    'function'=>'index'
+	));
 
-		route::set('api/([a-zA-Z0-9]+)', array(
+	route::set('api/([a-zA-Z0-9]+)', array(
 	  'controller'=>'api',
 	  'function'=>'$1'
 	));
-
-
-	  route::set('api/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)', array(
+	  
+	route::set('api/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)', array(
 	  'controller'=>'api',
 	  'function'=>'$1',
 	  'arguments'=>array('$2')
+	));
+
+	  route::set('api/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)', array(
+	  'controller'=>'api',
+	  'function'=>'$1',
+	  'arguments'=>array('$2','$3')
+	));
+	  
+	  route::set('api/([a-zA-Z0-9]+)/([0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)', array(
+	  'controller'=>'api',
+	  'function'=>'$1',
+	  'arguments'=>array('$2','$3','$4')
 	));
 
 

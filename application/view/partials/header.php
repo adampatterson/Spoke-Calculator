@@ -7,7 +7,6 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<!-- Le styles -->
 <link href="<?= CSS ?>bootstrap.css" rel="stylesheet">
 <link rel="stylesheet" href="<?= CSS ?>admin.css" />
 
@@ -21,6 +20,11 @@
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
 <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
 <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+
+<script src="<?= JS ?>jquery.js"></script>
+<script src="<?= JS ?>bootstrap.min.js"></script>
+<script src="<?= JS ?>application.js"></script>
+
 </head>
 
 <body>
