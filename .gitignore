@@ -33,3 +33,5 @@
 /application/view/_old/template-header.php
 /application/view/_old/update_comment.php
 /application/view/_old/update_contact.php
+*.DS_Store
+.DS_Store
