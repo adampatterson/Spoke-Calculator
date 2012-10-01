@@ -1,7 +1,7 @@
 <?
 
 class hub_model {
-	public function get( $orientation, $size, $string )
+	public function get( $frontrear='', $string='' )
 	{
 		$index_text = strip_tags( $string );
 	    $index_text = str_replace(".", " ", $index_text );
@@ -16,8 +16,12 @@ class hub_model {
 	    $index_text = str_replace("\r", " ", $index_text );
 	    $index_text = preg_replace("(\s+)", " ", $index_text );
 
-		$hubs = db::query("SELECT * FROM hubs WHERE MATCH(`model`,`name`) AGAINST ('$index_text')");
+		//SELECT * FROM hubs WHERE `frontrear`='$frontrear' AND `size` ='$size' AND 
 
+		$hubs = db::query("SELECT * FROM hubs WHERE `frontrear` = '$frontrear' AND MATCH(`model`,`name`) AGAINST ('$index_text')");
+		
+		//$hubs = db::query("SELECT * FROM hubs WHERE 'frontrear'='$frontrear' AND  MATCH(`model`,`name`) AGAINST ($index_text')");
+		
 		return $hubs;
 	}
 	

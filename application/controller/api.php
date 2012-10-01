@@ -7,7 +7,7 @@ class api_controller {
 	}
 	
 	
-	public function rim($argument='')
+	public function rim($size='', $argument='')
 	{
 		$rim = load::model ( 'hub' );
 		
@@ -21,17 +21,17 @@ class api_controller {
 	}
 	
 	
-	public function hub($orientation, $size, $argument='')
+	public function hub($frontrear='', $argument='')
 	{	
 		$hub = load::model ( 'hub' );
 		
 		if (is_numeric($argument)) {
 			$hubs = $hub->get_single( $argument );
 		} else {
-			$hubs = $hub->get( $orientation, $size, $argument );
+			$hubs = $hub->get( $frontrear, $argument );
 		}
 		
-		echo json_encode( $hub );
+		echo json_encode( $hubs );
 	}
 	
 

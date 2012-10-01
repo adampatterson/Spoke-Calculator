@@ -1,7 +1,7 @@
 <?
 
 class rim_model {
-	public function get( $string = '' )
+	public function get( $size='', $string = '' )
 	{
 		$index_text = strip_tags( $string );
 	    $index_text = str_replace(".", " ", $index_text );
@@ -16,7 +16,7 @@ class rim_model {
 	    $index_text = str_replace("\r", " ", $index_text );
 	    $index_text = preg_replace("(\s+)", " ", $index_text );
 
-		$rims = db::query("SELECT * FROM rims WHERE MATCH(`model`,`name`) AGAINST ('$index_text')");
+		$rims = db::query("SELECT * FROM rims WHERE `size` = '$size' AND MATCH(`model`,`name`) AGAINST ('$index_text')");
 
 		return $rims;
 	}
