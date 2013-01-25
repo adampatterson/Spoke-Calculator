@@ -8,20 +8,6 @@
  * @Project Page    http://www.dingoframework.com
  */
 
-
-// Does Application Use Mod_Rewrite URLs?
-define('MOD_REWRITE',TRUE);
-
-// Turn Debugging On?
-define('DEBUG',TRUE);
-
-// Turn Error Logging On?
-define('ERROR_LOGGING',TRUE);
-
-// Error Log File Location
-define('ERROR_LOG_FILE','log.txt');
-
-
 /**
  * Your Application's Default Timezone
  * Syntax for your local timezone can be found at
@@ -31,7 +17,7 @@ date_default_timezone_set('America/New_York');
 
 
 /* Auto Load Libraries */
-config::set('autoload_library',array('url','db','note','session','user'));
+config::set('autoload_library',array('url','db','note','session','user', 'pagination'));
 
 /* Auto Load Helpers */
 config::set('autoload_helper',array('calculator','user','inflector', 'date'));

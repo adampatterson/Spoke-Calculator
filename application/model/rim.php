@@ -1,20 +1,10 @@
 <?
 
-class rim_model {
+class rim_model
+{
 	public function get( $size='', $string = '' )
 	{
-		$index_text = strip_tags( $string );
-	    $index_text = str_replace(".", " ", $index_text );
-	    $index_text = str_replace(",", " ", $index_text );
-	    $index_text = str_replace("'", " ", $index_text );
-	    $index_text = str_replace("\"", " ", $index_text );
-		$index_text = str_replace("or", " ", $index_text );
-		$index_text = str_replace("and", " ", $index_text );
-
-
-	    $index_text = str_replace("\n", " ", $index_text );
-	    $index_text = str_replace("\r", " ", $index_text );
-	    $index_text = preg_replace("(\s+)", " ", $index_text );
+        $index_text = make_for_search( $string );
 
 		$rims = db::query("SELECT * FROM rims WHERE `size` = '$size' AND MATCH(`model`,`name`) AGAINST ('$index_text')");
 

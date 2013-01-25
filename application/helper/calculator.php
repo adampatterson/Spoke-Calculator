@@ -24,6 +24,27 @@ function icon ( $page )
 		echo 'icon-black';
 }
 
+
+function make_for_search( $string )
+{
+
+    $index_text = strip_tags( $string );
+    $index_text = str_replace(".", " ", $index_text );
+    $index_text = str_replace(",", " ", $index_text );
+    $index_text = str_replace("'", " ", $index_text );
+    $index_text = str_replace("\"", " ", $index_text );
+    $index_text = str_replace("or", " ", $index_text );
+    $index_text = str_replace("and", " ", $index_text );
+
+
+    $index_text = str_replace("\n", " ", $index_text );
+    $index_text = str_replace("\r", " ", $index_text );
+    $index_text = preg_replace("(\s+)", " ", $index_text );
+
+    return $index_text;
+}
+
+
 /**
  * Function: checked
  * If $val == 1 (true), outputs ' checked="checked"'
