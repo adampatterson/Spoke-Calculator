@@ -38,7 +38,7 @@
                         $.getJSON(url,
                             function(data){
 
-                                $.each(data.slice(0,4), function(i, item){
+                                $.each(data.slice(0,10), function(i, item){
                                     $(".hub_results").append('<li>' + item.name +' '+ item.model + '</li>');
                                 });
                             });
@@ -79,7 +79,7 @@
                         $.getJSON(url,
                             function(data){
 
-                                $.each(data.slice(0,4), function(i, item){
+                                $.each(data.slice(0,10), function(i, item){
                                     $(".rim_results").append('<li>' + item.name +' '+ item.model + '</li>');
                                 });
                             });
