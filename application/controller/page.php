@@ -15,8 +15,7 @@ class page_controller {
 
         $hubs = $hub->get( $frontrear, $string );
 
-        var_dump( $hubs );
-
+        echo json_encode( $hubs );
     }
 	
     public function rims( $size = '', $string = '' ) {
@@ -25,7 +24,7 @@ class page_controller {
 
         $rims = $rim->get( $size, $string );
 
-        var_dump( $rims );
+        echo json_encode( $rims );
     }
 	
 	

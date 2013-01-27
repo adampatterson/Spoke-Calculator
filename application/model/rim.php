@@ -4,11 +4,23 @@ class rim_model
 {
 	public function get( $size='', $string = '' )
 	{
-        $index_text = make_for_search( $string );
+        $raw_string = explode(' ', $string);
+        $raw_total = count($raw_string);
 
-		$rims = db::query("SELECT * FROM rims WHERE `size` = '$size' AND MATCH(`model`,`name`) AGAINST ('$index_text')");
+        $name = $raw_string[0];
 
-		return $rims;
+        if ( $raw_total == 1 )
+        {
+            return db::query("SELECT * FROM rims WHERE `size` = '$size' AND `name` LIKE '%$name%'");
+        } else {
+
+            $model = ltrim(str_replace($name, '', $string));
+
+            $model = make_for_search( $model );
+
+            return db::query("SELECT * FROM rims WHERE `size` = '$size' AND `name` LIKE '%$name%' AND `model` LIKE '%$model%'");
+        }
+
 	}
 	
 	

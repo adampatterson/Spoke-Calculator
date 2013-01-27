@@ -5,16 +5,15 @@ class api_controller {
 	{
 		
 	}
-	
-	
+
 	public function rim($size='', $argument='')
 	{
-		$rim = load::model ( 'hub' );
+		$rim = load::model ( 'rim' );
 		
 		if (is_numeric($argument)) {
 			$rims = $rim->get_single( $argument );
 		} else {
-			$rims = $rim->get( $argument );
+			$rims = $rim->get( $size, $argument );
 		}
 		
 		echo json_encode( $rims );

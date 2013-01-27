@@ -11,7 +11,7 @@
         'arguments'=>array('$2')
     ));
 
-    route::set('([-_a-zA-Z0-9]+)/([-_a-zA-Z0-9]+)/([a-zA-Z0-9]+)',array(
+    route::set('([-_a-zA-Z0-9]+)/([-_a-zA-Z0-9]+)/(.*?)',array(
         'controller'=>'page',
         'function'=>'$1',
         'arguments'=>array('$2', '$3')
@@ -60,7 +60,7 @@
 	  'arguments'=>array('$2')
 	));
 
-	  route::set('api/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)', array(
+	  route::set('api/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/(.*?)', array(
 	  'controller'=>'api',
 	  'function'=>'$1',
 	  'arguments'=>array('$2','$3')
