@@ -9,16 +9,33 @@
 
         $(".rim_data").live("click",function() {
 
-            var name = $(this).data('name');
+            $name   = $(this).data('name');
+            $erd    = $(this).data('erd');
+            $osb    = $(this).data('osb');
+            $size   = $(this).data('size');
 
-            console.log("clicked on "+ name);
+            $("input[name='erd']").val($erd);
+
+            console.log("clicked on "+ $erd);
         });
 
         $(".hub_data").live("click",function() {
 
-            var name = $(this).data('name');
+            $name   = $(this).data('name');
+            $fdl    = $(this).data('fdl');
+            $fdr    = $(this).data('fdr');
+            $cfl    = $(this).data('cfl');
+            $cfr    = $(this).data('cfr');
+            $shd    = $(this).data('shd');
 
-            console.log("clicked on "+ name);
+            $("input[name='name']").val($name);
+            $("input[name='fdl']").val($fdl);
+            $("input[name='fdr']").val($fdr);
+            $("input[name='cfl']").val($cfl);
+            $("input[name='cfr']").val($cfr);
+            $("input[name='shd']").val($shd);
+
+            console.log("clicked on "+ $name);
         });
 
 	});
@@ -53,15 +70,15 @@
                         $.getJSON(url,
                             function(data){
 
-                                $.each(data.slice(0,5), function(i, item){
+                                $.each(data.slice(0,3), function(i, item){
 
-                                    $html ='<div class="hub_data span3" data-name="' + item.name +'"><strong>' + item.name +'</strong>' +
+                                    $html ='<div class="hub_data span3" data-name="' + item.name +'" data-fdl="' + item.fdl +'" data-fdr="' + item.fdr +'" data-cfl="' + item.cfl +'" data-cfr="' + item.cfr +'" data-shd="' + item.shd +'"><strong>' + item.name +'</strong>' +
                                             '<ul>' +
                                                 '<li>Left flange ø: '+ item.fdl +' mm</li>' +
                                                 '<li>Right flange ø: '+ item.fdr +' mm</li>' +
                                                 '<li>Centre to left flange: '+ item.cfl +' mm</li>' +
                                                 '<li>Centre to right flange: '+ item.cfr +' mm</li>' +
-                                                '<li>Spoke hole ø: '+ item.spo +' mm</li>' +
+                                                '<li>Spoke hole ø: '+ item.shd +' mm</li>' +
                                             '</ul></div>';
 
                                     $(".hub_results").append($html);
@@ -105,9 +122,9 @@
                         $.getJSON(url,
                             function(data){
 
-                                $.each(data.slice(0,5), function(i, item){
+                                $.each(data.slice(0,3), function(i, item){
                                    
- 										$html ='<div class="rim_data span3" data-name="' + item.name +'"><strong>' + item.name +'</strong>' +
+ 										$html ='<div class="rim_data span3" data-name="' + item.name +'" data-erd="' + item.erd +'" data-osb="' + item.osb +'" data-size="' + item.size +'"><strong>' + item.name +'</strong>' +
                                             '<ul>' +
                                                 '<li>ERD: '+ item.erd +' mm</li>' +
                                                 '<li>OSB: '+ item.osb +' mm</li>' +
@@ -176,6 +193,12 @@
                         </tbody>
                     </table>
 
+                    <div class="row">
+                        <div class="form-actions">
+                            <button name="values" class="btn btn-primary">Load Values</button>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div class="span4">
@@ -199,16 +222,6 @@
                 </div>
 
 			</div>
-
-            <div class="row">
-
-                <div class="span8 offset4">
-                    <div class="form-actions">
-                        <button name="values" class="btn btn-primary">Load Values</button>
-                    </div>
-                </div>
-
-            </div>
 
 		</div>
 
