@@ -2,11 +2,11 @@
 
 class rim_model
 {
-	public function get( $size='', $string = '' )
+	public function get( $string = '' )
 	{
 	    $string = make_for_search( $string );
 	
-		return db::query("SELECT * FROM rims WHERE `size` LIKE '%$size%' AND `name` LIKE '%$string%'");
+		return db::query("SELECT * FROM rims WHERE `name` LIKE '%$string%'");
 
 	}
 	

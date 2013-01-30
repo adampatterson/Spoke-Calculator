@@ -6,17 +6,19 @@ class api_controller {
 		
 	}
 
-	public function rim($size='', $argument='')
+	public function rim( $argument='')
 	{
 		$rim = load::model ( 'rim' );
 		
 		if (is_numeric($argument)) {
 			$rims = $rim->get_single( $argument );
 		} else {
-			$rims = $rim->get( $size, $argument );
+			$rims = $rim->get( $argument );
 		}
-		
-		echo json_encode( $rims );
+
+        $fields = array('fields' => $rims);
+
+        echo json_encode( $fields );
 	}
 	
 	
@@ -29,8 +31,10 @@ class api_controller {
 		} else {
 			$hubs = $hub->get( $frontrear, $argument );
 		}
-		
-		echo json_encode( $hubs );
+
+        $fields = array('fields' => $hubs);
+
+        echo json_encode( $fields );
 	}
 	
 

@@ -15,7 +15,9 @@ class page_controller {
 
         $hubs = $hub->get( $frontrear, $string );
 
-        echo json_encode( $hubs );
+        $fields = array('fields' => $hubs);
+
+        echo json_encode( $fields );
     }
 	
     public function rims( $size = '', $string = '' ) {
@@ -24,13 +26,13 @@ class page_controller {
 
         $rims = $rim->get( $size, $string );
 
-        echo json_encode( $rims );
+        $fields = array('fields' => $rims);
+
+        echo json_encode( $fields );
     }
 	
 	
 	public function get() {
-	    	
-
 
     }
 	
