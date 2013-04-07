@@ -246,6 +246,7 @@
                         </div>
                         <div class="span6">
                             <h3>Details</h3>
+                            <p>Coming soon.</p>
                         </div>
                     </div>
 

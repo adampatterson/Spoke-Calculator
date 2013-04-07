@@ -67,7 +67,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</a>
-			<a class="brand" href="<?= BASE_URL ?>mockup"><?= TITLE ?></a>
+			<a class="brand" href="<?= BASE_URL ?>"><?= TITLE ?></a>
 			<div class="nav-collapse">
                 <?/*
 				<ul class="nav">
