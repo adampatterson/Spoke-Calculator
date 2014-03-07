@@ -119,7 +119,7 @@
             front_rear = 'rear';
         }
 
-		if(hub_search.length > 3)
+		if(hub_search.length > 1)
 		{
 			var url_base = '<?= BASE_URL ?>api/hub/'+ front_rear +'/';
 			var url_param = hub_search;
@@ -150,7 +150,7 @@
 
         var size = $("input[name='size']").val();
 
-        if(rim_search.length > 3)
+        if(rim_search.length > 1)
         {
             var url_base = '<?= BASE_URL ?>api/rim/';
             var url_param = rim_search;
@@ -257,7 +257,7 @@
 
                 <div class="span6">
 
-                    <h3>Existing</h3>
+                    <h3>Existing Measurements</h3>
 
                     <strong>Rim</strong>:
                     <input class="span6" id="rim_search"type="text" placeholder="">

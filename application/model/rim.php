@@ -6,7 +6,7 @@ class rim_model
 	{
 	    $string = make_for_search( $string );
 	
-		return db::query("SELECT * FROM rims WHERE `name` LIKE '%$string%'");
+		return db::query("SELECT * FROM rims WHERE `name` LIKE '%$string%' ORDER BY `name`");
 
 	}
 	
